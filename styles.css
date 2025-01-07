@@ -1,0 +1,784 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #002147;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    color: #ffdd00;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 15px;
+    z-index: 1;
+    border-radius: 8px;
+    top: 40px;
+  }
+  
+  .dropdown-section {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-section h4 {
+    margin-bottom: 10px;
+    color: #002147;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dropdown-section a {
+    display: block;
+    color: #333;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-section a:hover {
+    color: #ffdd00;
+  }
+  
+  .cta-button {
+    background-color: #ffdd00;
+    color: #002147;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #e6c200;
+    color: #fff;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #002147;
+      width: 200px;
+      display: none;
+      border-radius: 8px;
+      padding: 10px 0;
+    }
+    
+    nav ul.active {
+      display: flex;
+    }
+    
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+      background-color: #003366;
+      border-radius: 0;
+      padding: 0;
+    }
+    
+    .dropdown-section h4 {
+      color: #ffdd00;
+    }
+    
+    .dropdown-section a {
+      color: #fff;
+      padding: 10px 20px;
+    }
+    
+    .dropdown-section a:hover {
+      background-color: #ffdd00;
+      color: #002147;
+    }
+    
+    .hamburger {
+      display: block;
+    }
+  }/* Hero Section */
+.hero {
+    background: url("imgs/header2.png") center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 80px; /* Espaço para o header fixo */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .cta-button {
+    background-color: #ffdd00;
+    color: #002147;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+  
+  /* Segundo Banner */
+  .secondary-banner {
+    background: url("imgs/faixa.png") center center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #002147;
+    position: relative;
+  }
+  
+  .secondary-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Opcional: adicionar uma sobreposição se necessário */
+    /* background-color: rgba(255, 221, 0, 0.8); */
+  }
+  
+  .secondary-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .secondary-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .secondary-banner p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .secondary-banner .cta-button {
+    background-color: #002147;
+    color: #ffdd00;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  
+  /* Media Queries para Responsividade */
+  @media (max-width: 992px) {
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+    }
+    
+    .hero .cta-button {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+    }
+    
+    .secondary-banner h2 {
+      font-size: 2rem;
+    }
+    
+    .secondary-banner p {
+      font-size: 0.95rem;
+    }
+    
+    .secondary-banner .cta-button {
+      padding: 8px 20px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 60vh;
+    }
+    
+    .hero h2 {
+      font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+    
+    .hero .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+    
+    .secondary-banner {
+      height: 250px;
+    }
+    
+    .secondary-banner h2 {
+      font-size: 1.8rem;
+    }
+    
+    .secondary-banner p {
+      font-size: 0.9rem;
+    }
+    
+    .secondary-banner .cta-button {
+      padding: 7px 18px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 0.95rem;
+    }
+    
+    .hero .cta-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+    
+    .secondary-banner {
+      height: 200px;
+    }
+    
+    .secondary-banner h2 {
+      font-size: 1.5rem;
+    }
+    
+    .secondary-banner p {
+      font-size: 0.85rem;
+    }
+    
+    .secondary-banner .cta-button {
+      padding: 6px 15px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  
+  /* Seção de Cursos */
+  .cursos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #002147;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #ffdd00;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .sub-section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #002147;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffdd00;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-button {
+    background-color: #fff;
+    color: #002147;
+    padding: 10px 20px;
+    border: 2px solid #002147;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .filter-button:hover,
+  .filter-button.active {
+    background-color: #002147;
+    color: #ffdd00;
+  }
+  
+  .grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .curso-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .curso-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  .curso-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .curso-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .curso-info h3 {
+    font-size: 1.5rem;
+    color: #002147;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .curso-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+  
+  .curso-cta {
+    background-color: #ffdd00;
+    color: #002147;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .curso-cta:hover {
+    background-color: #e6c200;
+    color: #fff;
+  }
+  
+  /* Benefícios */
+  .beneficios {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .beneficios h2 {
+    font-size: 2.5rem;
+    color: #002147;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .beneficios p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .beneficio-item {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .beneficio-item:hover {
+    transform: translateY(-5px);
+    background-color: #e6f7ff;
+  }
+  
+  .beneficio-item i {
+    color: #ffdd00;
+  }
+  
+  .beneficio-item h4 {
+    font-size: 1.2rem;
+    color: #002147;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .beneficio-item p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Portal dos Aprovados */
+  .aprovados {
+    background-color: #002147;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 50px 0;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .aprovados .section-title {
+    color: #ffdd00;
+  }
+  
+  .aprovados p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .aprovados-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .aprovado-card {
+    background-color: #fff;
+    color: #002147;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .aprovado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  .aprovado-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .aprovado-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .aprovado-card span {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .aprovados .cta-button {
+    background-color: #ffdd00;
+    color: #002147;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .aprovados .cta-button:hover {
+    background-color: #e6c200;
+    color: #fff;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #002147;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+  }
+  
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-info h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p {
+    font-size: 1rem;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+  }
+  
+  .footer-social a:hover {
+    color: #ffdd00;
+  }
+  
+  .footer-social i {
+    color: inherit;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom a:hover {
+    color: #ffdd00;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    .container-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      background-color: #002147;
+      padding: 10px 0;
+      border-radius: 8px;
+    }
+    nav ul.active {
+      display: flex;
+    }
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+      background-color: #003366;
+      border-radius: 0;
+      padding: 0;
+    }
+    .dropdown-section h4 {
+      color: #ffdd00;
+    }
+    .dropdown-section a {
+      color: #fff;
+      padding: 10px 20px;
+    }
+    .dropdown-section a:hover {
+      background-color: #ffdd00;
+      color: #002147;
+    }
+    .beneficios-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .aprovados-carousel {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 70vh;
+    }
+    .hero h2 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .hero .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+    .secondary-banner h2 {
+      font-size: 2rem;
+    }
+    .secondary-banner p {
+      font-size: 0.9rem;
+    }
+    .secondary-banner .cta-button {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+    .beneficio-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    .beneficio-item i {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .curso-info h3 {
+      font-size: 1.3rem;
+    }
+    .curso-info p {
+      font-size: 0.95rem;
+    }
+    .beneficios h2 {
+      font-size: 2rem;
+    }
+    .beneficios p {
+      font-size: 1rem;
+    }
+    .aprovado-card h4 {
+      font-size: 1rem;
+    }
+    .aprovado-card span {
+      font-size: 0.9rem;
+    }
+  }
+  
