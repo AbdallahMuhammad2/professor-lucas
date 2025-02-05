@@ -3,6 +3,9 @@ import {
   Menu, X, ChevronDown, Award, BookOpen, Users, Target, Shield, Star, Zap, 
   GraduationCap, Mail, Phone, FileText, ChevronLeft, ChevronRight
 } from 'lucide-react';
+import curso1 from './imgs/curso1.png';
+import curso2 from './imgs/curso2.png';
+import curso3 from './imgs/curso3.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +52,7 @@ function App() {
       id: 2,
       title: "Prefeitura de Nova Lima",
       category: "prefeituras",
-      image: "imgs/curso2.png",
+      image: curso1,
       description: "Preparatório completo para o concurso da Prefeitura de Nova Lima.",
       link: "https://pay.kiwify.com.br/bG7QAL7",
       stats: {
@@ -62,7 +65,7 @@ function App() {
       id: 3,
       title: "Prefeitura de Conselheiro Lafaiete (IBGP)",
       category: "prefeituras",
-      image: "imgs/curso3.png",
+      image: "curso2",
       description: "Curso intensivo voltado para o concurso IBGP - Prefeitura de Conselheiro Lafaiete.",
       link: "https://pay.kiwify.com.br/pnyCOhb",
       stats: {
