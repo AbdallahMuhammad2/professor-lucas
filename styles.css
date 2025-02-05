@@ -781,4 +781,169 @@
       font-size: 0.9rem;
     }
   }
-  
+  /* Seção de Cursos */
+.courses-section {
+  padding: 5rem 0; /* Equivale a Tailwind .py-20 */
+}
+
+/* Botões de Filtro (apenas estilo, sem funcionalidade JS aqui) */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem; /* Equivale a Tailwind .mb-12 */
+}
+
+.filter-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 9999px; /* formato de "pill" */
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  background-color: #f3f3f3;
+  color: #666;
+}
+
+.filter-button:hover {
+  background-color: #e2e2e2;
+}
+
+.filter-button.active {
+  background-color: #1d4ed8; /* Azul similar ao Tailwind .bg-blue-600 */
+  color: #fff;
+}
+
+/* Grid de Cursos */
+.courses-grid {
+  display: grid;
+  gap: 2rem; 
+  grid-template-columns: 1fr; /* padrão mobile: 1 coluna */
+}
+
+/* Responsividade para telas médias */
+@media (min-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas grandes */
+  }
+}
+
+/* Card do Curso */
+.course-card {
+  background-color: #fff;
+  border-radius: 1rem; /* Equivale a Tailwind .rounded-2xl */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de "levitar" no hover */
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Imagem do curso (wrapper) */
+.course-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Ajuste da imagem */
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo interno do card */
+.course-content {
+  padding: 1.5rem;
+}
+
+.course-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.course-content p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.course-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1d4ed8; /* Azul .bg-blue-600 */
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.course-button:hover {
+  background-color: #1e40af; /* Azul mais escuro */
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+  background-color: #f9f9f9; /* similar ao .bg-gray-50 */
+  padding: 5rem 0; 
+}
+
+/* Grid dos Benefícios */
+.benefits-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; 
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card de benefício */
+.benefit-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.4;
+}
