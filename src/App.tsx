@@ -5,21 +5,21 @@ import {
 } from 'lucide-react';
 
 // Cursos
-import curso1 from './imgs/curso1.png';
-import curso2 from './imgs/curso2.png';
-import curso3 from './imgs/curso3.png';
+import curso1 from '..assets/imgs/curso1.png';
+import curso2 from '..assets/imgs/curso2.png';
+import curso3 from '..assets/imgs/curso3.png';
 
 // Cases
-import case1 from './imgs/case1.png';
-import case2 from './imgs/case2.png';
-import case3 from './imgs/case3.png';
-import case4 from './imgs/case4.png';
-import case5 from './imgs/case5.png';
-import case6 from './imgs/case6.png';
-import case7 from './imgs/case7.png';
-import case8 from './imgs/case8.png';
-import case9 from './imgs/case9.png';
-import case10 from './imgs/case10.png';
+import case1 from '..assets/imgs/case1.png';
+import case2 from '..assets/imgs/case2.png';
+import case3 from '..assets/imgs/case3.png';
+import case4 from '..assets/imgs/case4.png';
+import case5 from '..assets/imgs/case5.png';
+import case6 from '..assets/imgs/case6.png';
+import case7 from '..assets/imgs/case7.png';
+import case8 from '..assets/imgs/case8.png';
+import case9 from '..assets/imgs/case9.png';
+import case10 from '..assets/imgs/case10.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
