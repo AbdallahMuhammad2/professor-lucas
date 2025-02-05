@@ -492,7 +492,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-6">
                 <GraduationCap className="w-8 h-8 text-blue-300" />
-                <h3 className="text-2xl font-bold">Portal Concursos</h3>
+                <h3 className="text-2xl font-bold">Professor Lucas Dias</h3>
               </div>
               <p className="text-blue-200">
                 Sua jornada para o sucesso começa aqui. Junte-se a milhares de aprovados.
