@@ -3,9 +3,23 @@ import {
   Menu, X, ChevronDown, Award, BookOpen, Users, Target, Shield, Star, Zap, 
   GraduationCap, Mail, Phone, FileText, ChevronLeft, ChevronRight
 } from 'lucide-react';
+
+// Cursos
 import curso1 from './imgs/curso1.png';
 import curso2 from './imgs/curso2.png';
 import curso3 from './imgs/curso3.png';
+
+// Cases
+import case1 from './imgs/case1.png';
+import case2 from './imgs/case2.png';
+import case3 from './imgs/case3.png';
+import case4 from './imgs/case4.png';
+import case5 from './imgs/case5.png';
+import case6 from './imgs/case6.png';
+import case7 from './imgs/case7.png';
+import case8 from './imgs/case8.png';
+import case9 from './imgs/case9.png';
+import case10 from './imgs/case10.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +53,7 @@ function App() {
       id: 1,
       title: "Prefeitura de Viçosa",
       category: "prefeituras",
-      image: "imgs/curso1.png",
+      image: curso1,
       description: "Prepare-se para o concurso da Prefeitura de Viçosa com aulas específicas e atualizadas.",
       link: "https://pay.kiwify.com.br/g6OFHa3",
       stats: {
@@ -52,7 +66,7 @@ function App() {
       id: 2,
       title: "Prefeitura de Nova Lima",
       category: "prefeituras",
-      image: curso1,
+      image: curso2,
       description: "Preparatório completo para o concurso da Prefeitura de Nova Lima.",
       link: "https://pay.kiwify.com.br/bG7QAL7",
       stats: {
@@ -65,7 +79,7 @@ function App() {
       id: 3,
       title: "Prefeitura de Conselheiro Lafaiete (IBGP)",
       category: "prefeituras",
-      image: "curso2",
+      image: curso3,
       description: "Curso intensivo voltado para o concurso IBGP - Prefeitura de Conselheiro Lafaiete.",
       link: "https://pay.kiwify.com.br/pnyCOhb",
       stats: {
@@ -95,16 +109,16 @@ function App() {
    * =========================================================
    */
   const casesData = [
-    { id: 1, caption: "Case #1", image: "imgs/case3.png" },
-    { id: 2, caption: "Case #2", image: "imgs/case1.png" },
-    { id: 3, caption: "Case #3", image: "imgs/case2.png" },
-    { id: 4, caption: "Case #4", image: "imgs/case4.png" },
-    { id: 5, caption: "Case #5", image: "imgs/case5.png" },
-    { id: 6, caption: "Case #6", image: "imgs/case6.png" },
-    { id: 7, caption: "Case #7", image: "imgs/case7.png" },
-    { id: 8, caption: "Case #8", image: "imgs/case8.png" },
-    { id: 9, caption: "Case #9", image: "imgs/case9.png" },
-    { id: 10, caption: "Case #10", image: "imgs/case10.png" },
+    { id: 1, caption: "Case #1", image: case3 },
+    { id: 2, caption: "Case #2", image: case1 },
+    { id: 3, caption: "Case #3", image: case2 },
+    { id: 4, caption: "Case #4", image: case4 },
+    { id: 5, caption: "Case #5", image: case5 },
+    { id: 6, caption: "Case #6", image: case6 },
+    { id: 7, caption: "Case #7", image: case7 },
+    { id: 8, caption: "Case #8", image: case8 },
+    { id: 9, caption: "Case #9", image: case9 },
+    { id: 10, caption: "Case #10", image: case10 },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
